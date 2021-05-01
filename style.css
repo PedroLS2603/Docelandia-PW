@@ -75,7 +75,7 @@ nav a:hover{
 
 #promocaoBanner {
   height: 200px;
-  background-image: url("/images/brigadeiros.jpg");
+  background-image: url("images/brigadeiros.jpg");
   background-size: 200%;
   color: whitesmoke;
   font-size: 1.2vw;
