@@ -1,0 +1,281 @@
+/**Configurações gerais**/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffe6e6 ;
+  font-family: Candara, Helvetica, sans-serif;
+  color: #eb4e5e; 
+  margin: 0;
+  padding: 10px 50px 50px 50px;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+#imgLogo {
+  pointer-events: none;
+}
+
+header h1 {
+  font-size: 5rem;
+  user-select: none;
+}
+
+nav {
+  background-color:#eb4e5e;
+  display: flex;
+  justify-content: center;
+  box-shadow: 1px 1px 3px rgba(0,0,0, .3);
+}
+
+nav a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.6vw;
+  color: whitesmoke;
+  font-weight: bold;
+  padding: 14px;
+  transition: background-color .8s;
+}
+
+nav a:hover{
+  background-color: whitesmoke;
+  color: #eb4e5e;
+}
+
+.coluna-esquerda {
+  float: left;
+  width: 75%;
+}
+
+.coluna-direita {
+  float: left;
+  width: 25%;
+}
+
+.card {
+  background-color: whitesmoke;
+  padding: 20px;
+  margin: 20px 0px 20px 0px;
+  box-shadow: 1px 1px 3px rgba(0,0,0, .3);
+  border-radius: 5px;
+  overflow: hidden;
+  width: 98.5%;
+}
+
+#promocaoBanner {
+  height: 200px;
+  background-image: url("/images/brigadeiros.jpg");
+  background-size: 200%;
+  color: whitesmoke;
+  font-size: 1.2vw;
+  cursor: pointer;
+  position: relative;
+  text-shadow: 1px 1px 3px #eb4e5e;
+  transition: box-shadow .3s;
+}
+
+#promocaoBanner:hover {
+  box-shadow: 10px 10px 16px rgba(0,0,0, .6);
+}
+
+#promocaoValor {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.sobreImg {
+  border-radius: 50%;
+  margin: 10px;
+  height: 75px;
+  cursor: pointer;
+  border: 1px solid #eb4e5e; 
+  transition: .3s;
+}
+
+.sobreImg:hover {
+  box-shadow: 0px 3.5px 10px rgba(0,0,0, .5);
+}
+
+.sobreItens{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sobreTexto a{
+  color: #eb4e5e;
+  font-weight: bold; 
+}
+
+.promo {
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 8px;
+  font-size: 1.25vw;
+  cursor: pointer;
+  margin-top: 5px;
+  transition: .3s;
+}
+
+.promo Img {
+  border-radius: 50%;
+  border: 1px solid #eb4e5e;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.promo:hover {
+  box-shadow: 0px 0px 20px rgba(0,0,0, .3);
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social img {
+  margin: 5px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.social img:hover{
+  opacity: .7;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-gap: 16px;
+}
+
+.produto img {
+  border-radius: 50%;
+  border: 2px solid #eb4e5e;
+  height: 150px;
+}
+
+.produto {
+  text-align: center;
+  cursor: pointer;
+  transition: .3s;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  margin-top: 5px;
+}
+
+.produto:hover {
+  box-shadow: 0px 0px 20px rgba(0,0,0, .3);
+}
+
+.miniGrid {
+  height: 320px;
+  overflow: hidden;
+  padding: 13px;
+}
+
+#entrega {
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  height: 100px;
+  width: 300px;
+}
+
+#entrega img {
+  position: absolute;
+  border-radius: 50%;
+  transition: .3s;
+  width: 75px;
+  right: 10px;
+  opacity: .7;
+}
+
+#entrega img:hover {
+  opacity: 1;
+}
+
+#telefone {
+  position: absolute;
+  height: 70px;
+  background-color: #cf4b4f;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  opacity: 0;
+  transition: .3s;
+}
+
+#telefone p {
+  margin: 5px;
+}
+
+#entrega img:hover + #telefone{
+  opacity: 1;
+}
+
+@media screen and (max-width: 800px){
+
+.coluna-esquerda {
+  width: 100%;
+}
+
+.coluna-direita {
+  width: 100%;
+  padding: 0;
+}
+
+#imgLogo {
+  width: 75px;
+}
+
+header h1 {
+  font-size: 3rem;
+  user-select: none;
+}
+
+#promocaoBanner {
+  font-size: 2.6vw;
+
+}
+
+.promo {
+  padding: 8px;
+  font-size: 3.5vw;
+  align-items: center;
+}
+
+nav a{
+  font-size: 3vw;
+}
+
+}
+
+@media screen and (max-width:450px) {
+  body{
+    padding: 5px 25px 25px 25px;
+  }
+  nav{
+    display: block;
+    width: 100%;
+    box-shadow: 0px 0px 0px rgba(0,0,0, 0);
+  }
+  nav a {
+    font-size: 4vw;
+    border: 1px solid #ffe6e6;
+  }
+}
